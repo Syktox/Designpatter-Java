@@ -1,4 +1,4 @@
-package Factory_Pattern.Beispiel_2;
+package Factory_Pattern.Example_2;
 
 public class Marke_Demo {
     public static void main(String[] args) {

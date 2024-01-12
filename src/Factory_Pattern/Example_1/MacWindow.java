@@ -1,4 +1,4 @@
-package Factory_Pattern.Beispiel_1;
+package Factory_Pattern.Example_1;
 
 public class MacWindow implements Window {
     @Override

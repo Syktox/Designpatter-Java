@@ -1,8 +1,4 @@
-package Factory_Pattern.Beispiel_1;
-
-import Factory_Pattern.Beispiel_1.MacWindow;
-import Factory_Pattern.Beispiel_1.WinWindow;
-import Factory_Pattern.Beispiel_1.Window;
+package Factory_Pattern.Example_1;
 
 public class WindowFactory {
     public static Window createWindow(String window) {
