@@ -14,7 +14,7 @@ public class AwesomDrawingApp {
     }
 
     public static void main(String[] args) {
-        AwesomDrawingApp app = new AwesomDrawingApp(new Rectangle(100, 100, 30, 40));
+        AwesomDrawingApp app = new AwesomDrawingApp(new LineAdapter(new Line()));
         app.show();
     }
 }
@@ -43,7 +43,6 @@ abstract class Shape {
 class Circle extends Shape {
     private final int r;
 
-
     Circle(int x, int y, int r) {
         super(x, y);
         this.r = r;
@@ -69,5 +68,19 @@ class Rectangle extends Shape {
     @Override
     public void draw() {
         Window.drawRectangle(getX(), getY(), w, h);
+    }
+}
+
+class LineAdapter extends Shape {
+    Line line;
+
+    public LineAdapter(Line line) {
+        super(0, 0);
+        this.line = line;
+    }
+
+    @Override
+    public void draw() {
+        line.showFancyLine();
     }
 }

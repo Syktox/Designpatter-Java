@@ -26,5 +26,16 @@ How it looks:
 
 Usage: Using mergin unknown classes with a class own written
 
+Implementation:
+In the Adapter class you create an object of a non supported class.
+In the constructor you have to write the newly created object.
+Lastly you implement the methode that the abstract class or interface
+uses and manage how it should be handelt.
 
 
+# Fassade
+
+A fassade is a way to build around classes. Imagen you have 5 classes
+and every time the class have to start in a exact order to manage
+accessory and protect your programm from dumm people you build a fassade
+around it. You write a class that calls all functions in the right order.
