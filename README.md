@@ -39,3 +39,15 @@ A fassade is a way to build around classes. Imagen you have 5 classes
 and every time the class have to start in a exact order to manage
 accessory and protect your programm from dumm people you build a fassade
 around it. You write a class that calls all functions in the right order.
+
+# Composite Pattern
+
+More Objects that can be handled as one object
+(Grouping objects)
+
+# Visitor
+
+# Decorator
+
+Add features to a class without changing the class or to build 
+subclasses.

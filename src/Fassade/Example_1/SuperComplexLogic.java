@@ -1,4 +1,4 @@
-package Fassade;
+package Fassade.Example_1;
 
 import java.util.Scanner;
 
