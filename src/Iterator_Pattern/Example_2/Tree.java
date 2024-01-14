@@ -16,14 +16,23 @@ public class Tree<T extends Comparable<T>> {
         if (current == null) {
             return new TreeNode<T>(value);
         }
-
-        if (value.compareTo(current.value) < 0) {
-            root.left = addTreeNode(root.left, value);
-        } else if (value.compareTo(current.value) > 0) {
-            root.right = addTreeNode(root.right, value);
+        current = new TreeNode<>(value);
+        if (current.value.compareTo(value) > 0) {
+            if (current.left == null) {
+                current.left = new TreeNode<>(value);
+                System.out.println("LEFT");
+            }
+            System.out.println(current.value + ": " + value);
+        } else {
+            if (current.right == null) {
+                current.right = new TreeNode<>(value);
+                System.out.println("RIGTH");
+            }
+            System.out.println(current.value + ": " + value);
         }
-        return root;
+        return current;
     }
+
 }
 
 class TreeExampleDemo {

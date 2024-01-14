@@ -1,7 +1,7 @@
 package Factory_Pattern.Example_1;
 
-public class WindowFactory {
-    public static Window createWindow(String window) {
+public class WindowFactory extends FactoryWindow {
+    public Window createWindow(String window) {
         if (window.equals("mac")) {
             return new MacWindow();
         } else if (window.equals("windows")) {
